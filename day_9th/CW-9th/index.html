@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="main" id="main">
+            <h1 class="heading" id="heading">Change Me..</h1>
+        </div>
+        <div class="dropdown" id="dropdown">
+            <select name="" id="color" class="btn" onchange="changeColor(this.value);">
+                <option value="">Color</option>
+                <option value="Pink" id="Pink">Pink</option>
+                <option value="Green" id="Green">Green</option>
+                <option value="Yellow" id="Yellow">Yellow</option>
+                <option value="Blue" id="Blue">Blue</option>
+                <option value="Red" id="Red">Red</option>
+            </select>
+            <select name="" id="bgColor" class="btn" onchange="changeBgColor(this.value);">
+                <option value="">Background Color</option>
+                <option value="LightCoral" id="LightCoral">LightCoral</option>
+                <option value="LightCyan" id="LightCyan">LightCyan</option>
+                <option value="LightSalmon" id="LightSalmon">LightSalmon</option>
+                <option value="PapayaWhip" id="PapayaWhip">PapayaWhip</option>
+                <option value="Moccasin" id="Moccasin">Moccasin</option>
+            </select>
+            <select name="" id="padding" class="btn" onchange="changePadding(this.value);">
+                <option value="">Padding</option>
+                <option value="10pxp" id="10pxp">10px</option>
+                <option value="20pxp"id="20pxp">20px</option>
+                <option value="30pxp"id="30pxp">30px</option>
+                <option value="40pxp"id="40pxp">40px</option>
+                <option value="50pxp"id="50pxp">50px</option>
+            </select>
+            <select name="" id="size" class="btn" onchange="changeSize(this.value);">
+                <option value="">Font Size</option>
+                <option value="20pxf" id="20px">20px</option>
+                <option value="30pxf" id="30px">30px</option>
+                <option value="40pxf" id="40px">40px</option>
+                <option value="50pxf" id="50px">50px</option>
+                <option value="60pxf" id="60px">60px</option>
+            </select>
+            <select name="" id="weight" class="btn" onchange="changeWeight(this.value);">
+                <option value="">Font Weight</option>
+                <option value="bold" id="bold">bold</option>
+                <option value="bolder" id="bolder">bolder</option>
+                <option value="normal" id="normal">normal</option>
+                <option value="lighter" id="lighter">lighter</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>
