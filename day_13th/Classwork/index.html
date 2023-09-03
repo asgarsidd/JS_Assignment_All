@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch Me if You Can</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .catch-me {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            position: absolute;
+            cursor: pointer;
+            transition: 0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="catch-me">Catch me</div>
+
+    <script>
+        const catchMe = document.querySelector('.catch-me');
+
+        catchMe.addEventListener('mouseover', () => {
+            const maxX = window.innerWidth - catchMe.clientWidth;
+            const maxY = window.innerHeight - catchMe.clientHeight;
+
+            const newX = Math.random() * maxX;
+            const newY = Math.random() * maxY;
+
+            catchMe.style.transform = `translate(${newX}px, ${newY}px)`;
+        });
+    </script>
+</body>
+</html>
