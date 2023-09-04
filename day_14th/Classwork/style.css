@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #245a53;
+    text-align: center;
+}
+
+.timer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.timer {
+    background-color: #1f74a5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.timer-display {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.timer-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.timer-button:disabled {
+    cursor: not-allowed;
+    background-color: #ccc;
+    color: #666;
+}
